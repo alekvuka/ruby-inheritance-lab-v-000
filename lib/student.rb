@@ -1,3 +1,5 @@
+require 'pry'
+
 class Student < User
 
   def initialize
@@ -6,6 +8,8 @@ class Student < User
 
   def learn(new_knowelege)
     @knowledge << new_knowelege
+    binding.pry
+
   end
 
   def knowledge
